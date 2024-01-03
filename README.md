@@ -19,3 +19,46 @@ This table was imported by first importing a folder on my device which contained
 Power BI then combined the three tables into one. 
 Following this I combined the first_name and last_name columns into one full_name column using the Column From Examples feature.
 Then I removed the columns which were no longer needed and renamed columns as necessary.
+## Milestone 3: Create the Data Model
+### Date Table
+I created this table using the CALENDAR function making it sure it includes all dates from the start of the year of the first order date to the end of the year of the latest shipping date in the Orders table.
+I then added different columns using DAX formulas:
+
+- day_of_week = WEEKDAY('Dates Table'[date],2)
+- month_name = FORMAT('Dates Table'[date],"MMMM")
+- month_number = MONTH('Dates Table'[date])
+- quarter = QUARTER('Dates Table'[date])
+- year = YEAR('Dates Table'[date])
+- start_of_year = STARTOFYEAR('Dates Table'[date])
+- start_of_quarter = STARTOFQUARTER('Dates Table'[date])
+- start_of_month = STARTOFMONTH('Dates Table'[date])
+- start_of_week = 'Dates Table'[date] - WEEKDAY('Dates Table'[date],2) + 1
+
+### Star Schema & Measures Table
+I created the relationships between the different tables and added a Measures Table.
+![image](https://github.com/mihai0813/data-analytics-power-bi-report635/assets/148639573/e181388d-3b2f-4c6e-b51b-a10bb15e3ac7)
+### Key Measures
+I used DAX formulas to create important measures that are going to be used later on:
+
+- Total Orders = COUNTROWS('Orders')
+- Total Revenue = SUMX(Orders, Orders[product_quantity] * RELATED(Products[sale_price]))
+- Total Profit = SUMX(Orders, Orders[product_quantity] * (RELATED(Products[sale_price]) - RELATED(Products[cost_price])))
+- Total Customers = DISTINCTCOUNT(Orders[user_id])
+- Total Quantity = SUM(Orders[product_quantity])
+- Revenue YTD = TOTALYTD('Measures Table'[Total Revenue], Orders[order_date])
+- Profit YTD = TOTALYTD('Measures Table'[Total Profit], Orders[order_date])
+
+### Date & Geography Hierarchies
+I created the following date hierarchy to allow drill-down in future line charts.
+
+![image](https://github.com/mihai0813/data-analytics-power-bi-report635/assets/148639573/e9bf52da-c388-4d52-9695-1f9c8b36ed3a)
+
+I then created the following columns in the Stores table using DAX formulas:
+
+- country = IF(Stores[country_code] = "GB", "United Kingdom", IF(Stores[country_code] = "US", "United States", "Germany"))
+- world_region = IF(Stores[country_code] = "GB", "Europe", IF(Stores[country_code] = "US", "North America", "Europe"))
+- geography = CONCATENATE(Stores[country_region] & ", ", Stores[country])
+
+These columns were used to create the geography hierarchy which allows the data to be filtered by region, country & country region.
+
+![image](https://github.com/mihai0813/data-analytics-power-bi-report635/assets/148639573/0132c7b4-5759-4ce9-9300-67954b08adb2)
