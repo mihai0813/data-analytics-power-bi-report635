@@ -62,3 +62,12 @@ I then created the following columns in the Stores table using DAX formulas:
 These columns were used to create the geography hierarchy which allows the data to be filtered by region, country & country region.
 
 ![image](https://github.com/mihai0813/data-analytics-power-bi-report635/assets/148639573/0132c7b4-5759-4ce9-9300-67954b08adb2)
+
+## Milestone 4: Set up the report
+This milestone only included creating the 4 pages of the report along with creating space for a future navigation bar:
+
+- Executive Summary
+- Customer Detail
+- Product Detail
+- Stores Map
+
