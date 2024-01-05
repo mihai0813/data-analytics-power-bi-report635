@@ -73,7 +73,7 @@ This milestone only included creating the 4 pages of the report along with creat
 
 ## Milestone 5: Customer Detail Page
 
-![image](https://github.com/mihai0813/data-analytics-power-bi-report635/assets/148639573/2c278080-52bf-4a88-a26b-0887edf22f8f)
+![image](https://github.com/mihai0813/data-analytics-power-bi-report635/assets/148639573/db9ac652-ad45-4631-990b-cc45648955cb)
 
 ### Card Visuals
 
@@ -105,4 +105,30 @@ This milestone only included creating the 4 pages of the report along with creat
 
 ![image](https://github.com/mihai0813/data-analytics-power-bi-report635/assets/148639573/7a288acc-f61e-46aa-a976-4b4b060c01b3)
 
+## Milestone 6: Executive Summary Page
 
+![image](https://github.com/mihai0813/data-analytics-power-bi-report635/assets/148639573/700816ab-bfeb-4281-92e8-09b4660155a1)
+
+### Card Visuals
+
+- Total Revenue: This visual displays the Total Revenue measure.
+- Total Profit: This visual displays the Total Profit measure.
+- Total Orders: This visual displays the Total Orders measure.
+
+### Charts
+
+- Total Revenue by Country: This is a donut chart with country from the Stores table and the Total Revenue measure which shows the proportion of revenue from each country.
+- Total Revenue by Store Type: This is a donut chart with store_type from the Stores table and the Total Revenue measure which shows the proportion of revenue from each store type.
+- Total Orders by Product Category: This is a bar chart with category from the Products table on the Y-axis and the Total Orders measure on the X-axis which shows the number of orders for each product category.
+- Customers Trending: This is a line chart which uses the Date Hierarchy on the X-axis (excluding start of week & date) and the Total Customers measure on the Y-axis. In additon this chart has a trend line and forecast.
+
+### Top 10 Products Table
+Top 10 Products by Orders: This table contains the description & category columns from the Products table, along with the Total Revenue, Total Customers & Total Orders measures. The table has been filtered to show only the top 10 products by the Total Orders measure.
+
+### KPI Visuals
+I've created Quarterly Revenue, Profit & Orders KPI visuals. These display the values for the previous quarter along with the target values and the percentage difference between these. 
+This required creating Previous Quarter & Target Revenue/Profit/Orders measures.
+
+![image](https://github.com/mihai0813/data-analytics-power-bi-report635/assets/148639573/1ba05131-360c-4bc8-8a94-c2f34a8b7845)
+
+![image](https://github.com/mihai0813/data-analytics-power-bi-report635/assets/148639573/f2eed5f1-6489-4d3e-af2f-8f1aef2622af)
