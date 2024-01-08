@@ -132,3 +132,18 @@ This required creating Previous Quarter & Target Revenue/Profit/Orders measures.
 ![image](https://github.com/mihai0813/data-analytics-power-bi-report635/assets/148639573/1ba05131-360c-4bc8-8a94-c2f34a8b7845)
 
 ![image](https://github.com/mihai0813/data-analytics-power-bi-report635/assets/148639573/f2eed5f1-6489-4d3e-af2f-8f1aef2622af)
+
+## Milestone 7: Product Detail Page
+
+![image](https://github.com/mihai0813/data-analytics-power-bi-report635/assets/148639573/8038c4ef-a187-45ea-943b-02ab36a54661)
+
+### Gauge Visuals
+I've added three Gauge Visuals to display Quarterly Revenue, Quarterly Profit & Quarterly Orders against a 10% growth target. New DAX measures were created to calculate the targets. In addition new "Gauge Colour" measures were created to use conditional formatting on the visuals in order to display the value as red when it's below the target or green when it's above the target.
+
+### Charts
+
+- Total Revenue by Start of Quarter & Category: This is an area chart showing the revenue of the different categories of products, with time on the X-axis & revenue on the Y-axis.
+- Orders vs Profitability: This is a scatter graph with Profit per Order on the X-axis and Total Quantity (of products sold) on the Y-axis. This shows the  profitability of each product.
+
+### Top 10 Products Table
+Top 10 Products by Revenue: This table contains the description & category columns from the Products table, along with the Total Revenue, Total Customers & Total Orders measures. The table has been filtered to show only the top 10 products by the Total Revenue measure.
