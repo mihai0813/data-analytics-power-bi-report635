@@ -140,6 +140,10 @@ This required creating Previous Quarter & Target Revenue/Profit/Orders measures.
 ### Gauge Visuals
 I've added three Gauge Visuals to display Quarterly Revenue, Quarterly Profit & Quarterly Orders against a 10% growth target. New DAX measures were created to calculate the targets. In addition new "Gauge Colour" measures were created to use conditional formatting on the visuals in order to display the value as red when it's below the target or green when it's above the target.
 
+![image](https://github.com/mihai0813/data-analytics-power-bi-report635/assets/148639573/b3abde8c-0f45-4038-8c4d-cc278674b2ce)
+
+![image](https://github.com/mihai0813/data-analytics-power-bi-report635/assets/148639573/f0f81f41-f717-4963-bc17-cf1f0b65af60)
+
 ### Charts
 
 - Total Revenue by Start of Quarter & Category: This is an area chart showing the revenue of the different categories of products, with time on the X-axis & revenue on the Y-axis.
@@ -147,3 +151,29 @@ I've added three Gauge Visuals to display Quarterly Revenue, Quarterly Profit & 
 
 ### Top 10 Products Table
 Top 10 Products by Revenue: This table contains the description & category columns from the Products table, along with the Total Revenue, Total Customers & Total Orders measures. The table has been filtered to show only the top 10 products by the Total Revenue measure.
+
+## Milestone 8: Stores Map Page
+
+![image](https://github.com/mihai0813/data-analytics-power-bi-report635/assets/148639573/962bb3f8-227a-4c17-beee-14162489183c)
+
+On this page I added a map that shows the locations of the stores, to achieve this the visual uses the geography hierarchy created previously as the location and the bubble size is based on the Profit YTD Measure.
+In addition, I added a tile style slicer which allows users to select a specific country and only be shown the stores in that perticular country on the map.
+
+### Stores Drillthrough Page
+
+![image](https://github.com/mihai0813/data-analytics-power-bi-report635/assets/148639573/0f3bdc92-340d-467f-8ee2-ca5e62cf2c11)
+
+This page allows users to select a particular location and see more specific data. This page uses the following visuals:
+
+- Card Visual: This displays the store location, taken from the Stores Table.
+- Top 5 Products by Profit YTD: This table contains the description column from the Products Table, along with the Profit YTD, Total Orders & Total Revenue measures. The table has been filtered to show only the top 10 products by the Profit YTD measure.
+- Total Orders by Product Category: This is a column chart that shows the total orders on the Y-axis for every category of products on the X-axis.
+- Gauge Visuals - Revenue/Profit YTD & Targets: These visuals use new measures to display a target value of 20% year on year growth, the value field shows the Revenue/Profit YTD measures.
+
+![image](https://github.com/mihai0813/data-analytics-power-bi-report635/assets/148639573/32ee9bf9-1dad-4d55-a0db-489f43044a99)
+
+### Stores Tooltip Page
+
+Finally, I created a Stores Tooltip Page to be used as a tooltip for the Stores Map visual. This contains the Profit YTD vs Goal gauge visual from the drillthrough page and allows users to see relevant data by hovering over any store on the map.
+
+![image](https://github.com/mihai0813/data-analytics-power-bi-report635/assets/148639573/437103f7-33ba-4519-b6bd-1701ca10d91b)
