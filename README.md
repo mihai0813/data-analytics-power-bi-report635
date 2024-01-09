@@ -177,3 +177,16 @@ This page allows users to select a particular location and see more specific dat
 Finally, I created a Stores Tooltip Page to be used as a tooltip for the Stores Map visual. This contains the Profit YTD vs Goal gauge visual from the drillthrough page and allows users to see relevant data by hovering over any store on the map.
 
 ![image](https://github.com/mihai0813/data-analytics-power-bi-report635/assets/148639573/437103f7-33ba-4519-b6bd-1701ca10d91b)
+
+## Milestone 9: Cross-Filtering and Navigation
+
+I edited cross filtering between visuals as follows:
+
+- Executive Summary Page: Total Orders by Category bar chart and Top 10 Products table don't filter the KPI or card visuals.
+- Customer Detail Page: Top 20 Customers table does not filter any of the visuals. The Total Customers by Product Category bar chart does not affect the Customers Trending line chart. The Total Customers by Country chart cross-filters the Total Customers by Product Category chart.
+- Product Detail Page: The Orders vs. Profitability scatter graph and Top 10 Products table won't affect any of the other visuals.
+
+I used the icons provided to create the navigation bar buttons, when hovered over they change colour.
+
+![image](https://github.com/mihai0813/data-analytics-power-bi-report635/assets/148639573/05db2583-fb2a-417c-8c45-bc6f41956a92)
+![image](https://github.com/mihai0813/data-analytics-power-bi-report635/assets/148639573/bbbf29d1-8bd2-4f59-a5e1-af9c354a16ec)
