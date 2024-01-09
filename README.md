@@ -190,3 +190,8 @@ I used the icons provided to create the navigation bar buttons, when hovered ove
 
 ![image](https://github.com/mihai0813/data-analytics-power-bi-report635/assets/148639573/05db2583-fb2a-417c-8c45-bc6f41956a92)
 ![image](https://github.com/mihai0813/data-analytics-power-bi-report635/assets/148639573/bbbf29d1-8bd2-4f59-a5e1-af9c354a16ec)
+
+## Milestone 10: SQL Server
+
+For this milestone I connected to the SQL server of the database by using the SQLTools extentions on VScode. After this I saved the table and column names to my PC by using SQL queries.
+Finally, I answered some questions using SQL queries which can be found in this repository.
