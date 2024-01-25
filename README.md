@@ -1,5 +1,5 @@
 # README
-## Milestone 2: Import the Data Into Power BI
+## Importing Data into Power BI
 This milestone involved importing some tables into Power BI using different methods.
 ### Orders Table
 This table was imported from an Azure SQL Database, I first connected to the batabase and then selected the table I wanted.
@@ -19,7 +19,8 @@ This table was imported by first importing a folder on my device which contained
 Power BI then combined the three tables into one. 
 Following this I combined the first_name and last_name columns into one full_name column using the Column From Examples feature.
 Then I removed the columns which were no longer needed and renamed columns as necessary.
-## Milestone 3: Create the Data Model
+
+## Data Model & Star Schema
 ### Date Table
 I created this table using the CALENDAR function making it sure it includes all dates from the start of the year of the first order date to the end of the year of the latest shipping date in the Orders table.
 I then added different columns using DAX formulas:
@@ -63,7 +64,7 @@ These columns were used to create the geography hierarchy which allows the data 
 
 ![image](https://github.com/mihai0813/data-analytics-power-bi-report635/assets/148639573/0132c7b4-5759-4ce9-9300-67954b08adb2)
 
-## Milestone 4: Set Up the Report
+## Creating Report Pages
 This milestone only included creating the 4 pages of the report along with creating space for a future navigation bar:
 
 - Executive Summary
@@ -71,7 +72,7 @@ This milestone only included creating the 4 pages of the report along with creat
 - Product Detail
 - Stores Map
 
-## Milestone 5: Customer Detail Page
+## Customer Detail Page
 
 ![image](https://github.com/mihai0813/data-analytics-power-bi-report635/assets/148639573/db9ac652-ad45-4631-990b-cc45648955cb)
 
@@ -105,7 +106,7 @@ This milestone only included creating the 4 pages of the report along with creat
 
 ![image](https://github.com/mihai0813/data-analytics-power-bi-report635/assets/148639573/7a288acc-f61e-46aa-a976-4b4b060c01b3)
 
-## Milestone 6: Executive Summary Page
+## Executive Summary Page
 
 ![image](https://github.com/mihai0813/data-analytics-power-bi-report635/assets/148639573/700816ab-bfeb-4281-92e8-09b4660155a1)
 
@@ -133,7 +134,7 @@ This required creating Previous Quarter & Target Revenue/Profit/Orders measures.
 
 ![image](https://github.com/mihai0813/data-analytics-power-bi-report635/assets/148639573/f2eed5f1-6489-4d3e-af2f-8f1aef2622af)
 
-## Milestone 7: Product Detail Page
+## Product Detail Page
 
 ![image](https://github.com/mihai0813/data-analytics-power-bi-report635/assets/148639573/8038c4ef-a187-45ea-943b-02ab36a54661)
 
@@ -152,7 +153,7 @@ I've added three Gauge Visuals to display Quarterly Revenue, Quarterly Profit & 
 ### Top 10 Products Table
 Top 10 Products by Revenue: This table contains the description & category columns from the Products table, along with the Total Revenue, Total Customers & Total Orders measures. The table has been filtered to show only the top 10 products by the Total Revenue measure.
 
-## Milestone 8: Stores Map Page
+## Stores Map Page
 
 ![image](https://github.com/mihai0813/data-analytics-power-bi-report635/assets/148639573/962bb3f8-227a-4c17-beee-14162489183c)
 
@@ -178,7 +179,7 @@ Finally, I created a Stores Tooltip Page to be used as a tooltip for the Stores 
 
 ![image](https://github.com/mihai0813/data-analytics-power-bi-report635/assets/148639573/437103f7-33ba-4519-b6bd-1701ca10d91b)
 
-## Milestone 9: Cross-Filtering and Navigation
+## Cross-filtering & Report Navigation
 
 I edited cross filtering between visuals as follows:
 
@@ -191,7 +192,7 @@ I used the icons provided to create the navigation bar buttons, when hovered ove
 ![image](https://github.com/mihai0813/data-analytics-power-bi-report635/assets/148639573/05db2583-fb2a-417c-8c45-bc6f41956a92)
 ![image](https://github.com/mihai0813/data-analytics-power-bi-report635/assets/148639573/bbbf29d1-8bd2-4f59-a5e1-af9c354a16ec)
 
-## Milestone 10: SQL Server
+## SQL Server - Answering Business Questions
 
 For this milestone I connected to the SQL server of the database by using the SQLTools extentions on VScode. After this I saved the table and column names to my PC by using SQL queries.
 Finally, I answered some questions using SQL queries which can be found in this repository.
